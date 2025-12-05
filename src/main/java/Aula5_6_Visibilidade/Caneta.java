@@ -1,7 +1,7 @@
-package Aula5_6;
+package Aula5_6_Visibilidade;
 
 public class Caneta {
-   protected String modelo;
+    protected String modelo;
     protected String cor;
     private double ponta;
     protected int carga;
