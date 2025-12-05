@@ -1,5 +1,3 @@
-Aqui está o enunciado formatado em Markdown, pronto para ser colado no seu arquivo `README.md`.
-
 ## 💡 Nova Tarefa POO: Simulador de Pedido Online (App de Comida) 🍔
 
 Este desafio simula uma situação real e de fácil entendimento: o gerenciamento de um item em um pedido de aplicativo de entrega. O objetivo é aplicar os conceitos de **Programação Orientada a Objetos (POO)** em um contexto de comércio eletrônico, focando em **Encapsulamento** e **Lógica de Negócio**.
