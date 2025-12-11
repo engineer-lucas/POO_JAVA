@@ -9,6 +9,10 @@ public class Luta {
     private int rounds;
     private boolean aprovada;
 
+    public Luta() {
+
+    }
+
     //MÉTODOS
     //PERSONALIZADOS
     public void marcarLuta(Lutador l1, Lutador l2){
@@ -31,12 +35,30 @@ public class Luta {
             this.getDesafiante().apresentar();
 
             Random aleatorio = new Random();
+            int vencendor = aleatorio.nextInt(3);
+            switch (vencendor){
+                case 0: //empate
+                    System.out.println("EMPATOU!!!");
+                    this.desafiado.empatarLuta();
+                    this.desafiante.empatarLuta();
+                    break;
+                case 1: //desafiado ganhou
+                    System.out.println("VITÓRIA : " + this.desafiado.getNome());
+                    this.desafiado.ganharLuta();
+                    this.desafiante.perderLuta();
+                    break;
+                case 2: //desafiante ganhou
+                    System.out.println("VITÓRIA : " + this.desafiante.getNome());
+                    this.desafiado.perderLuta();
+                    this.desafiante.ganharLuta();
+                    break;
+            }
         } else {
             System.out.println("A LUTA NÃO PODE ACONTECER!!!");
         }
 
     }
-    //CONSTRUTOR
+/*    //CONSTRUTOR
     public Luta(Lutador desafiado, Lutador desafiante,
                 int rounds, boolean aprovada) {
         this.desafiado = desafiado;
@@ -44,6 +66,8 @@ public class Luta {
         this.rounds = rounds;
         this.aprovada = aprovada;
     }
+
+ */
     //ESPECIAIS
     //GETTER E SETTER
     public Lutador getDesafiado() {
