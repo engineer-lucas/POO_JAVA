@@ -1,4 +1,4 @@
-package Grafipel;
+package Aula22_Grafipel;
 
 public class Aplicacao {
     public static void main(String[] args) {
